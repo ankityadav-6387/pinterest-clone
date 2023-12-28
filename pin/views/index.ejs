@@ -1,0 +1,20 @@
+<% include ./partials/header.ejs %>
+
+
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center">
+  <div class="w-96 h-80 bg-zinc-100 px-20 rounded-md" >
+    <h1 class="leading-none text-center font-semibold text-zinc-800 mt-3 text-2xl">Create New Account</h1>
+    <form action="/signup" method="post">
+      <input class="block mt-2 w-full py-2 border-2 "  type="text" placeholder="username" name="username">
+      <input class="block mt-2 w-full py-2 border-2 "  type="text" placeholder="fullname" name="fullname">
+      <input class="block mt-2 w-full py-2 border-2 " type="text" placeholder="email" name="email">
+      <input class="block mt-2 w-full py-2 border-2 " type="password" name="password" placeholder="password">
+      <button class="block mt-2 w-full py-2 border-2 bg-red-300 rounded-md" >signup</button>
+    </form>
+     <a href="/signin">signin</a>
+  </div>
+  
+</div>
+<% include ./partials/footer.ejs %>
+  
+
